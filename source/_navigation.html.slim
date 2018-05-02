@@ -1,0 +1,16 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-dark
+  = link_to 'Future Condo', '/', class: 'navbar-brand'
+  button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav.ml-md-auto
+      - sitemap.find_resource_by_path('index.html').children.each do |resource|
+        - next if resource == current_page
+        li.nav-item
+          = link_to resource.data.headline, resource.path, class: 'nav-link'
+      li.nav-item
+        a.nav-link href="https://www.facebook.com/FutureCondoStudio/" title="Future Condo on Facebook"
+          i.fab.fa-facebook
+      li.nav-item
+        a.nav-link href="mailto:futurecondo@gmail.com" title="email Future Condo"
+          i.far.fa-envelope

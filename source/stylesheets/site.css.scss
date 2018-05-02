@@ -1,0 +1,138 @@
+body {
+  background-color: #cfcfcf;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 18vh 1rem;
+  text-align: center;
+}
+
+nav {
+    background: #000;
+    display: block;
+    left: 0;
+    max-width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+a.navbar-brand {
+  color: orange !important;
+  font-family: Monoton, sans-serif;
+}
+
+a.nav-link {
+  color: orange !important;
+}
+
+h1 {
+  font-family: 'Monoton', serif;
+  color: orange;
+}
+
+a {
+  color: orange
+}
+
+article {
+  color: #efefef;
+  background-color:rgba(0, 0, 0, 0.7);
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 2rem;
+}
+
+body {
+  background-color: #cfcfcf;
+  font-family: roboto, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.gear {
+  background-image: url(/images/gear-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/gear-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/gear-640.jpg);
+  }
+}
+
+body.index {
+  background-image: url(/images/home-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/home-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/home-640.jpg);
+  }
+}
+
+body.john_miller {
+  background-image: url(/images/john_miller-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/john_miller-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/john_miller-640.jpg);
+  }
+}
+
+body.john_peters {
+  background-image: url(/images/control_room-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/control_room-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/control_room-640.jpg);
+  }
+}
+
+body.services {
+  background-image: url(/images/fancy_mics-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/fancy_mic-1000.jpg);
+  }
+
+  @media only screen and (max-width: 640px) {
+    background-image: url(/images/fancy_mics-640.jpg);
+  }
+}
+
+body.testimonials {
+  background-image: url(/images/testimonials-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/testimonials-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/testimonials-640.jpg);
+  }
+}
+
+body.gallery {
+  background-image: url(/images/gallery-reverb-tank-2-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/gallery-reverb-tank-2-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/gallery-reverb-tank-2-640.jpg);
+  }
+}

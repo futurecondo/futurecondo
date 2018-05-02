@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    / Use the title from a page's frontmatter if it has one
+    title #{current_page.data.title}
+    = stylesheet_link_tag "monoton_font"
+    = stylesheet_link_tag "bootstrap.min"
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    = javascript_include_tag "bootstrap.min"
+    = javascript_include_tag "fontawesome.min"
+    = javascript_include_tag "fa-brands.min"
+    = javascript_include_tag "fa-regular.min"
+    = javascript_include_tag "site"
+  body class="#{page_classes}"
+    = partial 'navigation'
+    h1 #{current_page.data.headline}
+
+    main.container
+      .row
+        article
+          = yield
