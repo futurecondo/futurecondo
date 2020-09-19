@@ -4,27 +4,5 @@ headline: Gallery
 body_class: gallery
 ---
 
-#galleryCarouselControls.carousel.slide data-keyboard="true" data-carousel="false"
-  .carousel-inner
-    .carousel-item.active
-      = photo('gallery-live-room')
-    .carousel-item
-      = photo('gallery-control-room')
-    .carousel-item
-      = photo('gallery-outboard')
-    .carousel-item
-      = photo('gear-mics')
-    .carousel-item
-      = photo('gallery-keys')
-    .carousel-item
-      = photo('gallery-rhodes')
-    .carousel-item
-      = photo('gear-guitars-2')
-    .carousel-item
-      = photo('gear-effects')
-  a.carousel-control-prev href="#galleryCarouselControls" role="button" data-slide="prev"
-    span.carousel-control-prev-icon aria-hidden="true"
-    span.sr-only Previous
-  a.carousel-control-next href="#galleryCarouselControls" role="button" data-slide="next"
-    span.carousel-control-next-icon aria-hidden="true"
-    span.sr-only Next
+.container
+  = gallery(['gallery-live-room', 'gallery-control-room', 'gallery-outboard', 'gear-mics', 'gallery-keys', 'gallery-rhodes', 'gear-guitars-2', 'gear-effects'])
