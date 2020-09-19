@@ -1,9 +1,12 @@
 nav.navbar.fixed-top.navbar-expand-lg.navbar-dark
-  = link_to 'Future Condo', '/', class: 'navbar-brand'
+  = link_to 'Future Condo', '/home.html', class: 'navbar-brand'
   button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ml-md-auto
+      li.nav-item
+        a.nav-link href="/"
+          | Covid Plan
       - sitemap.find_resource_by_path('index.html').children.each do |resource|
         - next if resource == current_page
         li.nav-item

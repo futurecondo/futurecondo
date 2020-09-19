@@ -65,6 +65,18 @@ body.gear {
   }
 }
 
+body.home {
+  background-image: url(/images/home-1440.jpg);
+
+  @media only screen and (max-width: 1000px) {
+    background-image: url(/images/home-1000.jpg);
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-image: url(/images/home-640.jpg);
+  }
+}
+
 body.index {
   background-image: url(/images/home-1440.jpg);
 
